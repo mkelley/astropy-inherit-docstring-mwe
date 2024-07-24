@@ -2,9 +2,8 @@
 Demo
 ----
 
-```
-tox -e build_docs
-```
+
+    tox -e build_docs
 
 Then open docs/_build/html/index.html and navigate to the separation docstring.
 Note the link to the astropy page: Separations, Offsets, Catalog Matching, and
@@ -13,10 +12,9 @@ Related Functionality.
 Then edit example_mod.py and comment out the docstring fixes.  Re-build and the
 following errors appear (one for separation(), one for separation_3d()):
 
-```
-/disks/data0/astro/Projects/astropy-inherit-docstring-mwe/.tox/build_docs/lib/python3.11/site-packages/astropy_inherit_docstring_mwe/example_mod.py:docstring of astropy.coordinates.baseframe.BaseCoordinateFrame.separation:3: WARNING: unknown document: 'astropy:/coordinates/matchsep'
-/disks/data0/astro/Projects/astropy-inherit-docstring-mwe/.tox/build_docs/lib/python3.11/site-packages/astropy_inherit_docstring_mwe/example_mod.py:docstring of astropy.coordinates.baseframe.BaseCoordinateFrame.separation_3d:4: WARNING: unknown document: 'astropy:/coordinates/matchsep'
-```
+
+    /disks/data0/astro/Projects/astropy-inherit-docstring-mwe/.tox/build_docs/lib/python3.11/site-packages/astropy_inherit_docstring_mwe/example_mod.py:docstring of astropy.coordinates.baseframe.BaseCoordinateFrame.separation:3: WARNING: unknown document: 'astropy:/coordinates/matchsep'
+    /disks/data0/astro/Projects/astropy-inherit-docstring-mwe/.tox/build_docs/lib/python3.11/site-packages/astropy_inherit_docstring_mwe/example_mod.py:docstring of astropy.coordinates.baseframe.BaseCoordinateFrame.separation_3d:4: WARNING: unknown document: 'astropy:/coordinates/matchsep'
 
 
 

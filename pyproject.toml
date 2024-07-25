@@ -5,10 +5,10 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "astropy_inherit_docstring_mwe"
 description = ""
-requires-python = ">=3.9"
+requires-python = ">=3.10"
 readme = { file = "README.rst", content-type = "text/x-rst" }
 license = { text = "BSD-3-Clause" }
-dependencies = ["astropy>6"]
+dependencies = ["astropy>=6.1"]
 version = "0.0.1"
 
 [project.optional-dependencies]
